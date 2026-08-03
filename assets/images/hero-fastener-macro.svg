@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <radialGradient id="g" cx="70%" cy="20%"><stop offset="0%" stop-color="#1a1c23"/><stop offset="100%" stop-color="#0f1014"/></radialGradient>
+    <pattern id="dot" width="60" height="60" patternUnits="userSpaceOnUse"><circle cx="30" cy="30" r="1.5" fill="rgba(0,102,204,0.15)"/></pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g)"/>
+  <rect width="1920" height="1080" fill="url(#dot)"/>
+  <circle cx="1420" cy="240" r="320" fill="none" stroke="rgba(0,102,204,0.08)" stroke-width="2"/>
+  <circle cx="1420" cy="240" r="200" fill="none" stroke="rgba(0,102,204,0.06)" stroke-width="1"/>
+  <line x1="100" y1="800" x2="1820" y2="800" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="100" y1="860" x2="1820" y2="860" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+  <text x="960" y="520" text-anchor="middle" fill="#ffffff" font-family="system-ui,sans-serif" font-size="56" font-weight="700" letter-spacing="-1">Precision Fasteners</text>
+  <text x="960" y="590" text-anchor="middle" fill="#0066cc" font-family="system-ui,sans-serif" font-size="56" font-weight="700" letter-spacing="-1">Engineered for Global Industry</text>
+</svg>
