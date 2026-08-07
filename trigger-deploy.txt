@@ -1,2 +1,0 @@
-Trigger deployment after DNS fix: 2026-08-06 22:15
-DNS switched to DNS only for www
