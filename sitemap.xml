@@ -1,64 +1,93 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.taily-metal.com/</loc>
-    <lastmod>2026-08-04</lastmod>
+    <loc>https://www.taily-metal.com</loc>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>1</priority>
   </url>
   <url>
-    <loc>https://www.taily-metal.com/products</loc>
-    <lastmod>2026-08-04</lastmod>
+    <loc>https://www.taily-metal.com/products/</loc>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.taily-metal.com/capabilities</loc>
-    <lastmod>2026-08-04</lastmod>
+    <loc>https://www.taily-metal.com/products/cold-headed-fasteners/</loc>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.taily-metal.com/about</loc>
-    <lastmod>2026-08-04</lastmod>
+    <loc>https://www.taily-metal.com/products/nuts-washers/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.taily-metal.com/products/precision-parts/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.taily-metal.com/products/custom-assemblies/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.taily-metal.com/capabilities/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.taily-metal.com/about/</loc>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.taily-metal.com/contact</loc>
-    <lastmod>2026-08-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.taily-metal.com/catalog</loc>
+    <loc>https://www.taily-metal.com/contact/</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.taily-metal.com/company-profile</loc>
+    <loc>https://www.taily-metal.com/blog/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.taily-metal.com/blog/cold-heading-vs-cnc-machining/</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.taily-metal.com/materials</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://www.taily-metal.com/blog/fastener-material-selection-guide/</loc>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.taily-metal.com/blog/metric-thread-size-guide</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://www.taily-metal.com/blog/china-fastener-rfq-guide/</loc>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.taily-metal.com/blog/fastener-surface-finish-guide</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://www.taily-metal.com/blog/case-study-automotive-ev-fasteners/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.taily-metal.com/blog/case-study-medical-stainless-fasteners/</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
-
