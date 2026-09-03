@@ -79,13 +79,25 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.taily-metal.com/blog/cold-heading-vs-cnc-machining/</loc>
+    <loc>https://www.taily-metal.com/blog/fastener-surface-finish-guide/</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.taily-metal.com/blog/fastener-surface-finish-guide/</loc>
+    <loc>https://www.taily-metal.com/blog/case-study-automotive-ev-fasteners/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.taily-metal.com/blog/case-study-ev-battery-bolts-lead-time/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.taily-metal.com/blog/case-study-m1.2-electronics-fasteners/</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -97,7 +109,25 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.taily-metal.com/blog/case-study-automotive-ev-fasteners/</loc>
+    <loc>https://www.taily-metal.com/blog/case-study-medical-stainless-precision/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.taily-metal.com/blog/case-study-medical-stainless-fasteners/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.taily-metal.com/blog/cold-heading-vs-cnc-machining/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.taily-metal.com/blog/fastener-material-selection-guide/</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -121,43 +151,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.taily-metal.com/blog/precision-fasteners-electronics-semiconductor-southeast-asia/</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.taily-metal.com/blog/case-study-m1.2-electronics-fasteners/</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.taily-metal.com/blog/fastener-material-selection-guide/</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.taily-metal.com/blog/automotive-fastener-supply-chain-mexico-tier-1/</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.taily-metal.com/blog/case-study-ergonomic-furniture-precision-fasteners/</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.taily-metal.com/blog/case-study-ev-battery-bolts-lead-time/</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.taily-metal.com/blog/case-study-medical-stainless-fasteners/</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -169,7 +163,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.taily-metal.com/blog/case-study-medical-stainless-precision/</loc>
+    <loc>https://www.taily-metal.com/blog/precision-fasteners-electronics-semiconductor-southeast-asia/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.taily-metal.com/blog/automotive-fastener-supply-chain-mexico-tier-1/</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
