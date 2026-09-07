@@ -1,4 +1,4 @@
-export const blogPosts = [
+﻿export const blogPosts = [
   {
     slug: 'precision-fasteners-electronics-semiconductor-southeast-asia',
     title: 'Precision Fastening Solutions for Southeast Asia’s Electronics & Semiconductor Sector',
@@ -140,7 +140,7 @@ export const blogPosts = [
         p: 'For global procurement managers and engineers, reducing the cost per unit (CPU) without compromising performance is a constant challenge. When it comes to bolts, screws, and special pins, the choice usually falls between CNC machining and Cold Heading. While CNC offers flexibility, Cold Heading is the champion of cost optimization for high-volume production.',
       },
       {
-        img: '/blog-images/cold-heading-line.png',
+        img: '/blog-images/cold-heading-line.webp',
         caption: 'A high-efficiency multi-station cold heading production line at Taily Metal factory.',
       },
       {
@@ -152,7 +152,7 @@ export const blogPosts = [
         p: 'While CNC cycles are measured in minutes, our multi-station cold heading machines produce 100-300 parts per minute. The cost advantage becomes dramatic at volumes above 50,000 pieces per year, where tooling costs are quickly amortized.',
       },
       {
-        img: '/blog-images/ev-fastener-qc.png',
+        img: '/blog-images/ev-fastener-qc.webp',
         caption: 'Precision quality control for EV fasteners ensuring 100% compliance with automotive standards.',
       },
       {
