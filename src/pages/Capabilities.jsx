@@ -128,7 +128,7 @@ export default function Capabilities() {
               </div>
               {/* Hardness */}
               <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm h-40">
-                <img src="https://sc02.alicdn.com/kf/A36798e98604344848037344007833077e.png" alt="Hardness Testing" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src="https://sc02.alicdn.com/kf/Ha8ad2a681a5546eb9be5bdd94da5c9a5c.jpg" alt="Hardness Testing" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Hardness</div>
               </div>
               {/* Optical - New */}
