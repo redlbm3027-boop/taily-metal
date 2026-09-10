@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://taily-metal.com/sitemap.xml
+Sitemap: https://www.taily-metal.com/sitemap.xml
