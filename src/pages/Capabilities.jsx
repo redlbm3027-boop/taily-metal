@@ -6,7 +6,7 @@ const timeline = [
   { icon: <PenTool size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Design & Engineering', desc: 'Our engineers review your drawings and optimize for manufacturability. We support STP, DWG, PDF, and hand sketches.' },
   { icon: <Cog size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Tooling & Setup', desc: 'In-house tooling workshop with CNC tool grinders, EDM, and custom die fabrication for rapid turnaround.' },
   { icon: <Factory size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Production', desc: 'Multi-shift production across high-speed cold heading, thread rolling, CNC, and automated stamping lines.' },
-  { icon: <FlaskConical size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Quality Control', desc: 'Full inspection per ISO 9001: dimensional checks, hardness testing, tensile testing, and salt spray.' },
+  { icon: <FlaskConical size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Quality Control', desc: 'Full inspection per ISO 9001: dimensional checks, hardness testing, and surface inspection.' },
 ];
 
 const equipment = [
@@ -108,7 +108,7 @@ export default function Capabilities() {
                 {[
                   { title: 'Dimensional Inspection', desc: 'Precision measurement of diameters, lengths, and thread pitches using digital calipers and projectors.' },
                   { title: 'Hardness Testing', desc: 'Rockwell or Vickers hardness testing to verify material tempering and heat treatment consistency.' },
-                  { title: 'Salt Spray Test', desc: 'Up to 2000+ hours of corrosion resistance validation for Dacromet and galvanized finishes.' },
+                  { title: 'Surface Inspection', desc: 'Detailed visual and instrumental check for plating thickness, smoothness, and coating integrity.' },
                 ].map((item) => (
                   <div key={item.title} className="flex items-start gap-4 p-5 rounded-sm bg-gray-50 border border-gray-100 hover:bg-white hover:shadow-md transition-all">
                     <CheckCircle2 size={18} style={{ color: 'var(--color-accent-warm)' }} className="mt-1" />
@@ -131,8 +131,8 @@ export default function Capabilities() {
                   <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Hardness</div>
                 </div>
                 <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm h-48">
-                  <img src="https://sc02.alicdn.com/kf/Ab020d1325bcb4d3abd8e377d63952e2dp.png" alt="Salt Spray Test" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Salt Spray</div>
+                  <img src="https://sc02.alicdn.com/kf/Ab020d1325bcb4d3abd8e377d63952e2dp.png" alt="Surface Inspection" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Surface</div>
                 </div>
               </div>
             </div>
