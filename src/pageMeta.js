@@ -1,21 +1,21 @@
 export const pageMeta = {
   '/': {
-    title: 'Custom Fastener & Cold Heading/CNC/Stamping | Taily Metal China',
+    title: 'Custom Cold Headed Fasteners Manufacturer China | Taily Metal',
     description:
-      'ISO 9001 factory specialized in custom cold heading & CNC fasteners for EV, Solar & Electronics. Supporting high-speed automated assembly in SE Asia with RoHS/REACH compliance.',
-    keywords: 'Custom Fastener Manufacturer China, Precision Cold Heading Factory, EV Battery Fasteners, Micro Electronics Screws Vietnam, M1.2 Precision Fasteners Thailand',
+      'ISO 9001 factory specialized in custom cold heading & OEM bolt manufacturing. Supporting high-speed automated assembly in SE Asia and Mexico with Grade 12.9 & Dacromet coating solutions.',
+    keywords: 'custom fastener manufacturer, cold heading manufacturer China, OEM bolt supplier, Automotive Fasteners, Precision Micro Screws, Electronics Fasteners',
   },
   '/products': {
-    title: 'Custom Fasteners & Precision Bolts | Taily Metal China',
+    title: 'Custom Bolts, Screws & Precision Micro Fasteners | Taily Metal',
     description:
-      'Precision fasteners manufacturer for electronics, automotive & medical industries. Supplying M1.0-M3.0 micro screws and Grade 12.9 bolts with global shipping to SE Asia and Mexico.',
-    keywords: 'Micro Fasteners for Electronics, DIN JIS ISO Standard Bolts, Grade 12.9 High Strength Fasteners, Precision Metal Parts Vietnam, Fastener Supplier Thailand',
+      'Professional supplier of Custom Bolts, M1.2 Screws, and Special Rivets. High-precision CNC Machined & Stamping Parts for solar mounting and electronics industries.',
+    keywords: 'Custom Bolts, Custom Screws, M1.2 Screws, Special Rivets, solar mounting bolts, electronics micro screws, CNC Machined Parts',
   },
   '/capabilities': {
-    title: 'Manufacturing Capabilities | Cold Heading, CNC & Stamping',
+    title: 'Cold Heading Process & Manufacturing Capabilities | Taily Metal',
     description:
-      "Advanced cold heading, CNC & stamping facility in China. ISO 9001 quality control with 500M+ annual capacity. High-speed precision production.",
-    keywords: 'Cold Heading Service China, Precision CNC Machining, OEM Metal Stamping',
+      'Advanced cold heading process for high-volume production. Specializing in Grade 12.9 bolt manufacturing and Dacromet coating fasteners for zero-defect assembly.',
+    keywords: 'cold heading process, Grade 12.9 bolt manufacturing, Dacromet coating fasteners, stainless steel fasteners, Stamping Parts',
   },
   '/materials': {
     title: 'Fastener Materials Guide | Steel, Stainless, Brass & Aluminum',
