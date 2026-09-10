@@ -114,8 +114,8 @@ export default function Products() {
             </button>
             
             <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isProcessOpen ? 'max-h-[1200px] border-t opacity-100' : 'max-h-0 opacity-0'}`} style={{ borderColor: 'var(--color-border)' }}>
-              <div className="p-8 md:p-12 overflow-x-auto">
-                <svg className="w-full min-w-[600px] h-auto mx-auto" viewBox="0 0 680 900" role="img" style={{ display: 'block' }}>
+              <div className="p-4 md:p-12 overflow-x-auto">
+                <svg className="w-full min-w-[700px] h-auto mx-auto" viewBox="0 0 760 920" role="img" style={{ display: 'block' }}>
                   <title>Taily Metal Technical Production Process Flowchart</title>
                   <defs>
                     <marker id="arrow-blue" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -124,100 +124,99 @@ export default function Products() {
                   </defs>
                   
                   {/* Nodes & Arrows - Row 1 */}
-                  <g transform="translate(190, 80)">
-                    <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
-                    <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">线材</text>
-                    <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Feed in</text>
+                  <g transform="translate(230, 80)">
+                    <circle r="50" fill="#fff" stroke="var(--color-accent)" strokeWidth="2" />
+                    <text y="-6" textAnchor="middle" fontSize="12" fontWeight="600" fill="var(--color-text-strong)">线材</text>
+                    <text y="10" textAnchor="middle" fontSize="9" fill="var(--color-accent)">Feed in</text>
                   </g>
-                  <path d="M 245 80 L 315 80" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <g transform="translate(380, 80)">
-                    <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
-                    <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">检查</text>
-                    <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Material inspection</text>
+                  <path d="M 285 80 L 355 80" stroke="#475569" strokeWidth="1" fill="none" markerEnd="url(#arrow-blue)" />
+                  <g transform="translate(420, 80)">
+                    <circle r="50" fill="#fff" stroke="var(--color-accent)" strokeWidth="2" />
+                    <text y="-6" textAnchor="middle" fontSize="12" fontWeight="600" fill="var(--color-text-strong)">检查</text>
+                    <text y="10" textAnchor="middle" fontSize="9" fill="var(--color-accent)">Inspection</text>
                   </g>
                   
                   {/* Row 2: Heading */}
-                  <path d="M 380 135 L 380 175" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <g transform="translate(380, 240)">
-                    <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
-                    <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">打头</text>
-                    <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Heading</text>
+                  <path d="M 420 135 L 420 175" stroke="#475569" strokeWidth="1" fill="none" markerEnd="url(#arrow-blue)" />
+                  <g transform="translate(420, 240)">
+                    <circle r="50" fill="#fff" stroke="var(--color-accent)" strokeWidth="2" />
+                    <text y="-6" textAnchor="middle" fontSize="12" fontWeight="600" fill="var(--color-text-strong)">打头</text>
+                    <text y="10" textAnchor="middle" fontSize="9" fill="var(--color-accent)">Heading</text>
                   </g>
                   
                   {/* Secondary Machining & Clamping */}
-                  <path d="M 325 240 L 255 240" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <g transform="translate(190, 240)">
-                    <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
-                    <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">二次加工</text>
-                    <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Secondary machining</text>
+                  <path d="M 365 240 L 295 240" stroke="#475569" strokeWidth="1" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                  <g transform="translate(230, 240)">
+                    <circle r="50" fill="#fff" stroke="var(--color-accent)" strokeWidth="2" />
+                    <text y="-6" textAnchor="middle" fontSize="12" fontWeight="600" fill="var(--color-text-strong)">二次加工</text>
+                    <text y="10" textAnchor="middle" fontSize="9" fill="var(--color-accent)">Secondary</text>
                   </g>
                   
-                  <path d="M 435 240 L 505 240" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <g transform="translate(570, 240)">
-                    <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
-                    <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">合模</text>
-                    <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Clamping</text>
+                  <path d="M 475 240 L 545 240" stroke="#475569" strokeWidth="1" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                  <g transform="translate(610, 240)">
+                    <circle r="50" fill="#fff" stroke="var(--color-accent)" strokeWidth="2" />
+                    <text y="-6" textAnchor="middle" fontSize="12" fontWeight="600" fill="var(--color-text-strong)">合模</text>
+                    <text y="10" textAnchor="middle" fontSize="9" fill="var(--color-accent)">Clamping</text>
                   </g>
                   
                   {/* Threading */}
-                  <path d="M 380 295 L 380 335" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <path d="M 570 295 L 390 380" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <path d="M 190 295 L 370 380" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <g transform="translate(380, 400)">
-                    <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
-                    <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">搓牙</text>
-                    <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Threading</text>
+                  <path d="M 420 295 L 420 335" stroke="#475569" strokeWidth="1" fill="none" markerEnd="url(#arrow-blue)" />
+                  <path d="M 610 295 L 430 380" stroke="#475569" strokeWidth="1" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                  <path d="M 230 295 L 410 380" stroke="#475569" strokeWidth="1" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                  <g transform="translate(420, 400)">
+                    <circle r="50" fill="#fff" stroke="var(--color-accent)" strokeWidth="2" />
+                    <text y="-6" textAnchor="middle" fontSize="12" fontWeight="600" fill="var(--color-text-strong)">搓牙</text>
+                    <text y="10" textAnchor="middle" fontSize="9" fill="var(--color-accent)">Threading</text>
                   </g>
                   
                   {/* Heat Treatment & Surface Treatment */}
-                  <path d="M 190 350 L 190 295" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <g transform="translate(190, 560)">
-                    <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
-                    <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">热处理</text>
-                    <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Heat treatment</text>
+                  <g transform="translate(230, 560)">
+                    <circle r="50" fill="#fff" stroke="var(--color-accent)" strokeWidth="2" />
+                    <text y="-6" textAnchor="middle" fontSize="12" fontWeight="600" fill="var(--color-text-strong)">热处理</text>
+                    <text y="10" textAnchor="middle" fontSize="9" fill="var(--color-accent)">Heat treat</text>
                   </g>
-                  <path d="M 325 400 L 225 515" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <path d="M 245 560 L 315 560" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <path d="M 380 455 L 380 495" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <g transform="translate(380, 560)">
-                    <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
-                    <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">表面处理</text>
-                    <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Surface treatment</text>
+                  <path d="M 365 400 L 265 515" stroke="#475569" strokeWidth="1" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                  <path d="M 285 560 L 355 560" stroke="#475569" strokeWidth="1" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                  <path d="M 420 455 L 420 495" stroke="#475569" strokeWidth="1" fill="none" markerEnd="url(#arrow-blue)" />
+                  <g transform="translate(420, 560)">
+                    <circle r="50" fill="#fff" stroke="var(--color-accent)" strokeWidth="2" />
+                    <text y="-6" textAnchor="middle" fontSize="12" fontWeight="600" fill="var(--color-text-strong)">表面处理</text>
+                    <text y="10" textAnchor="middle" fontSize="9" fill="var(--color-accent)">Surface finish</text>
                   </g>
                   
                   {/* Anti-slipping & Baking */}
-                  <path d="M 435 560 L 505 560" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <g transform="translate(570, 560)">
-                    <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
-                    <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">防松处理</text>
-                    <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Anti-slipping patch</text>
+                  <path d="M 475 560 L 545 560" stroke="#475569" strokeWidth="1" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                  <g transform="translate(610, 560)">
+                    <circle r="50" fill="#fff" stroke="var(--color-accent)" strokeWidth="2" />
+                    <text y="-6" textAnchor="middle" fontSize="12" fontWeight="600" fill="var(--color-text-strong)">防松处理</text>
+                    <text y="10" textAnchor="middle" fontSize="9" fill="var(--color-accent)">Anti-slip</text>
                   </g>
-                  <path d="M 380 615 L 380 655" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <path d="M 570 615 L 435 700" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <g transform="translate(380, 720)">
-                    <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
-                    <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">除氢</text>
-                    <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Baking</text>
+                  <path d="M 420 615 L 420 655" stroke="#475569" strokeWidth="1" fill="none" markerEnd="url(#arrow-blue)" />
+                  <path d="M 610 615 L 475 700" stroke="#475569" strokeWidth="1" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                  <g transform="translate(420, 720)">
+                    <circle r="50" fill="#fff" stroke="var(--color-accent)" strokeWidth="2" />
+                    <text y="-6" textAnchor="middle" fontSize="12" fontWeight="600" fill="var(--color-text-strong)">除氢</text>
+                    <text y="10" textAnchor="middle" fontSize="9" fill="var(--color-accent)">Baking</text>
                   </g>
                   
                   {/* QA & Packaging & Shipping */}
-                  <path d="M 325 720 L 255 720" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <g transform="translate(190, 720)">
-                    <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
-                    <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">检查</text>
-                    <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">QA</text>
+                  <path d="M 365 720 L 295 720" stroke="#475569" strokeWidth="1" fill="none" markerEnd="url(#arrow-blue)" />
+                  <g transform="translate(230, 720)">
+                    <circle r="50" fill="#fff" stroke="var(--color-accent)" strokeWidth="2" />
+                    <text y="-6" textAnchor="middle" fontSize="12" fontWeight="600" fill="var(--color-text-strong)">检查</text>
+                    <text y="10" textAnchor="middle" fontSize="9" fill="var(--color-accent)">QA</text>
                   </g>
-                  <path d="M 190 775 L 190 825 L 225 825" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <g transform="translate(290, 825)">
-                    <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
-                    <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">包装</text>
-                    <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Packaging</text>
+                  <path d="M 230 775 L 230 825 L 265 825" stroke="#475569" strokeWidth="1" fill="none" markerEnd="url(#arrow-blue)" />
+                  <g transform="translate(330, 825)">
+                    <circle r="50" fill="#fff" stroke="var(--color-accent)" strokeWidth="2" />
+                    <text y="-6" textAnchor="middle" fontSize="12" fontWeight="600" fill="var(--color-text-strong)">包装</text>
+                    <text y="10" textAnchor="middle" fontSize="9" fill="var(--color-accent)">Packing</text>
                   </g>
-                  <path d="M 345 825 L 415 825" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
-                  <g transform="translate(480, 825)">
-                    <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
-                    <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">出货</text>
-                    <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Shipping</text>
+                  <path d="M 385 825 L 455 825" stroke="#475569" strokeWidth="1" fill="none" markerEnd="url(#arrow-blue)" />
+                  <g transform="translate(520, 825)">
+                    <circle r="50" fill="#fff" stroke="var(--color-accent)" strokeWidth="2" />
+                    <text y="-6" textAnchor="middle" fontSize="12" fontWeight="600" fill="var(--color-text-strong)">出货</text>
+                    <text y="10" textAnchor="middle" fontSize="9" fill="var(--color-accent)">Shipping</text>
                   </g>
                 </svg>
               </div>
