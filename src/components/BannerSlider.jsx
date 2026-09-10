@@ -29,7 +29,7 @@ export default function BannerSlider() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 6000);
+    }, 8000); // Slow down carousel to 8s to stabilize LCP
     return () => clearInterval(timer);
   }, []);
 
@@ -45,6 +45,8 @@ export default function BannerSlider() {
             src={slide.image}
             alt={slide.label}
             className="w-full h-full object-cover opacity-60 object-center"
+            fetchpriority={i === 0 ? "high" : "low"}
+            loading={i === 0 ? "eager" : "lazy"}
           />
           {/* Subtle industrial blueprint overlay on top of images */}
           <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(90deg, rgba(26,31,46,0.9) 0%, rgba(26,31,46,0.4) 50%, rgba(26,31,46,0.2) 100%)' }} />
