@@ -165,40 +165,119 @@ export default function Products() {
             </div>
           </div>
 
-          {/* Manufacturing Process */}
+          {/* Manufacturing Process (Flowchart Style) */}
           <div className="mt-8 p-8 md:p-12 rounded-sm" style={{ background: 'var(--color-bg-surface)', border: '1px solid var(--color-border)' }}>
-            <div className="text-center max-w-2xl mx-auto mb-12">
-              <h3 className="text-2xl font-bold mb-4" style={{ color: 'var(--color-text-strong)' }}>From Drawing To Production</h3>
-              <p className="text-sm" style={{ color: 'var(--color-text-body)' }}>
-                A streamlined manufacturing workflow designed for precision, speed, and cost-efficiency.
-              </p>
+            <div className="flex items-center gap-3 mb-10 border-b-2 pb-2 w-fit" style={{ borderColor: 'var(--color-accent)' }}>
+              <span className="text-xl font-bold" style={{ color: 'var(--color-text-strong)' }}>生产工艺</span>
+              <span className="text-sm font-medium" style={{ color: 'var(--color-accent)' }}>Technical process</span>
             </div>
             
-            <div className="max-w-4xl mx-auto">
-              <div className="flex flex-col items-center gap-4">
-                {[
-                  { step: 'Step 1', title: 'Drawing Review', desc: 'Detailed analysis of your STP/DWG files for manufacturing feasibility.' },
-                  { step: 'Step 2', title: 'Engineering Optimization', desc: 'Expert suggestions on material and process to reduce your unit cost.' },
-                  { step: 'Step 3', title: 'Tooling Development', desc: 'In-house precision die fabrication tailored to your specific geometry.' },
-                  { step: 'Step 4', title: 'Mass Production', desc: 'High-speed multi-station cold heading with continuous quality monitoring.' },
-                  { step: 'Step 5', title: 'Inspection & Shipment', desc: '100% AOI optical sorting and professional export packaging.' }
-                ].map((item, i, arr) => (
-                  <div key={i} className="w-full flex flex-col items-center">
-                    <div className="w-full md:flex items-center gap-6 p-6 rounded-sm bg-white border border-dashed border-gray-200 hover:border-solid hover:border-[#c47a4a]/30 transition-all">
-                      <div className="text-xs font-black uppercase tracking-widest text-[#c47a4a] mb-2 md:mb-0 md:w-24 shrink-0">{item.step}</div>
-                      <div className="flex-1">
-                        <div className="text-lg font-bold text-[#1a1f2e] mb-1">{item.title}</div>
-                        <div className="text-sm text-gray-500">{item.desc}</div>
-                      </div>
-                    </div>
-                    {i < arr.length - 1 && (
-                      <div className="py-2 text-[#c47a4a]/40">
-                        <ArrowRight size={24} className="rotate-90" />
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
+            <div className="max-w-4xl mx-auto overflow-x-auto">
+              <svg className="w-full min-w-[600px] h-auto" viewBox="0 0 680 900" role="img" style={{ display: 'block' }}>
+                <title>Taily Metal Technical Production Process Flowchart</title>
+                <defs>
+                  <marker id="arrow-blue" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569" />
+                  </marker>
+                </defs>
+                
+                {/* Nodes & Arrows - Row 1 */}
+                <g transform="translate(190, 80)">
+                  <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
+                  <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">线材</text>
+                  <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Feed in</text>
+                </g>
+                <path d="M 245 80 L 315 80" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
+                <g transform="translate(380, 80)">
+                  <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
+                  <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">检查</text>
+                  <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Material inspection</text>
+                </g>
+                
+                {/* Row 2: Heading */}
+                <path d="M 380 135 L 380 175" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
+                <g transform="translate(380, 240)">
+                  <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
+                  <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">打头</text>
+                  <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Heading</text>
+                </g>
+                
+                {/* Secondary Machining & Clamping */}
+                <path d="M 325 240 L 255 240" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                <g transform="translate(190, 240)">
+                  <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
+                  <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">二次加工</text>
+                  <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Secondary machining</text>
+                </g>
+                
+                <path d="M 435 240 L 505 240" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                <g transform="translate(570, 240)">
+                  <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
+                  <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">合模</text>
+                  <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Clamping</text>
+                </g>
+                
+                {/* Threading */}
+                <path d="M 380 295 L 380 335" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
+                <path d="M 570 295 L 390 380" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                <path d="M 190 295 L 370 380" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                <g transform="translate(380, 400)">
+                  <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
+                  <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">搓牙</text>
+                  <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Threading</text>
+                </g>
+                
+                {/* Heat Treatment & Surface Treatment */}
+                <path d="M 190 350 L 190 295" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                <g transform="translate(190, 560)">
+                  <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
+                  <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">热处理</text>
+                  <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Heat treatment</text>
+                </g>
+                <path d="M 325 400 L 225 515" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                <path d="M 245 560 L 315 560" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                <path d="M 380 455 L 380 495" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
+                <g transform="translate(380, 560)">
+                  <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
+                  <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">表面处理</text>
+                  <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Surface treatment</text>
+                </g>
+                
+                {/* Anti-slipping & Baking */}
+                <path d="M 435 560 L 505 560" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                <g transform="translate(570, 560)">
+                  <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
+                  <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">防松处理</text>
+                  <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Anti-slipping patch</text>
+                </g>
+                <path d="M 380 615 L 380 655" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
+                <path d="M 570 615 L 435 700" stroke="#475569" strokeWidth="1.2" strokeDasharray="4 2" fill="none" markerEnd="url(#arrow-blue)" />
+                <g transform="translate(380, 720)">
+                  <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
+                  <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">除氢</text>
+                  <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Baking</text>
+                </g>
+                
+                {/* QA & Packaging & Shipping */}
+                <path d="M 325 720 L 255 720" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
+                <g transform="translate(190, 720)">
+                  <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
+                  <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">检查</text>
+                  <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">QA</text>
+                </g>
+                <path d="M 190 775 L 190 825 L 225 825" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
+                <g transform="translate(290, 825)">
+                  <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
+                  <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">包装</text>
+                  <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Packaging</text>
+                </g>
+                <path d="M 345 825 L 415 825" stroke="#475569" strokeWidth="1.2" fill="none" markerEnd="url(#arrow-blue)" />
+                <g transform="translate(480, 825)">
+                  <circle r="55" fill="#fff" stroke="var(--color-accent)" strokeWidth="2.5" />
+                  <text y="-8" textAnchor="middle" fontSize="14" fontWeight="600" fill="var(--color-text-strong)">出货</text>
+                  <text y="12" textAnchor="middle" fontSize="10" fill="var(--color-accent)">Shipping</text>
+                </g>
+              </svg>
             </div>
           </div>
           
