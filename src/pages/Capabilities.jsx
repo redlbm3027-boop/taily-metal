@@ -120,20 +120,31 @@ export default function Capabilities() {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col gap-4">
-              <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm h-64">
+            <div className="grid grid-cols-2 gap-3">
+              {/* Main Dimensional - Big */}
+              <div className="col-span-2 group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm h-60">
                 <img src="https://sc02.alicdn.com/kf/A961c3a86dea344078c3ae9419cfbbef1C.png" alt="Dimensional Inspection" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Dimensional</div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm h-48">
-                  <img src="https://sc02.alicdn.com/kf/A36798e98604344848037344007833077e.png" alt="Hardness Testing" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Hardness</div>
-                </div>
-                <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm h-48">
-                  <img src="https://sc02.alicdn.com/kf/Ab020d1325bcb4d3abd8e377d63952e2dp.png" alt="Surface Inspection" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Surface</div>
-                </div>
+              {/* Hardness */}
+              <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm h-40">
+                <img src="https://sc02.alicdn.com/kf/A36798e98604344848037344007833077e.png" alt="Hardness Testing" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Hardness</div>
+              </div>
+              {/* Optical - New */}
+              <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm h-40">
+                <img src="https://sc02.alicdn.com/kf/Hbd172298c1f34c389864527b7abdb4656.jpg" alt="Optical Analysis" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Optical</div>
+              </div>
+              {/* AOI - New */}
+              <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm h-40">
+                <img src="https://sc02.alicdn.com/kf/H1e5ac3176b144fa1b8dc96abf88a192aq.jpg" alt="AOI Sorting" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">AOI System</div>
+              </div>
+              {/* Surface/Salt Spray - New */}
+              <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm h-40">
+                <img src="https://sc02.alicdn.com/kf/H11a6721dc7ca4766a8a451cfab3a10580.jpg" alt="Surface Inspection" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Surface</div>
               </div>
             </div>
           </div>
