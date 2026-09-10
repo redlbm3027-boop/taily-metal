@@ -108,7 +108,6 @@ export default function Capabilities() {
                 {[
                   { title: 'Dimensional Inspection', desc: 'Precision measurement of diameters, lengths, and thread pitches using digital calipers and projectors.' },
                   { title: 'Hardness Testing', desc: 'Rockwell or Vickers hardness testing to verify material tempering and heat treatment consistency.' },
-                  { title: 'Tensile Testing', desc: 'Destructive testing to measure breaking strength and elongation, ensuring load-bearing reliability.' },
                   { title: 'Salt Spray Test', desc: 'Up to 2000+ hours of corrosion resistance validation for Dacromet and galvanized finishes.' },
                 ].map((item) => (
                   <div key={item.title} className="flex items-start gap-4 p-5 rounded-sm bg-gray-50 border border-gray-100 hover:bg-white hover:shadow-md transition-all">
@@ -121,22 +120,20 @@ export default function Capabilities() {
                 ))}
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm">
-                <img src="https://sc02.alicdn.com/kf/A961c3a86dea344078c3ae9419cfbbef1C.png" alt="Dimensional Inspection" className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div className="flex flex-col gap-4">
+              <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm h-64">
+                <img src="https://sc02.alicdn.com/kf/A961c3a86dea344078c3ae9419cfbbef1C.png" alt="Dimensional Inspection" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Dimensional</div>
               </div>
-              <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm">
-                <img src="https://sc02.alicdn.com/kf/A36798e98604344848037344007833077e.png" alt="Hardness Testing" className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Hardness</div>
-              </div>
-              <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm">
-                <img src="https://sc02.alicdn.com/kf/A9d98e1694f474075b9420078330777eX.png" alt="Tensile Testing" className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Tensile</div>
-              </div>
-              <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm">
-                <img src="https://sc02.alicdn.com/kf/Ab020d1325bcb4d3abd8e377d63952e2dp.png" alt="Salt Spray Test" className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Salt Spray</div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm h-48">
+                  <img src="https://sc02.alicdn.com/kf/A36798e98604344848037344007833077e.png" alt="Hardness Testing" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Hardness</div>
+                </div>
+                <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm h-48">
+                  <img src="https://sc02.alicdn.com/kf/Ab020d1325bcb4d3abd8e377d63952e2dp.png" alt="Salt Spray Test" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Salt Spray</div>
+                </div>
               </div>
             </div>
           </div>
