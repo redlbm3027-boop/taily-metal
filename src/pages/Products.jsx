@@ -8,7 +8,6 @@ import { categories } from '../data/categories';
 import { productsFaqs } from '../data/faqs';
 
 export default function Products() {
-  const [active, setActive] = useState(0);
   const [isProcessOpen, setIsProcessOpen] = useState(false);
 
   useEffect(() => {
@@ -40,129 +39,53 @@ export default function Products() {
 
       <section className="section">
         <div className="page-container">
-          {/* Category cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {/* Category cards - Simplified to direct links */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {categories.map((cat, i) => (
-              <div
+              <Link
                 key={i}
-                className="card cursor-pointer transition-all duration-300 relative overflow-hidden"
-                style={active === i ? { borderColor: 'var(--color-accent)', boxShadow: '0 8px 32px rgba(44,62,80,0.12)', borderWidth: '2px' } : {}}
-                onClick={() => setActive(i)}
+                to={`/products/${cat.slug}/`}
+                className="card group hover:border-var(--color-accent) transition-all duration-300 p-0 overflow-hidden flex flex-col sm:flex-row"
+                style={{ border: '1px solid var(--color-border)' }}
               >
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <h3 className="text-lg font-bold mb-2" style={{ color: active === i ? 'var(--color-accent)' : 'var(--color-text-strong)' }}>{cat.name}</h3>
-                      <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--color-text-body)' }}>{cat.desc}</p>
-                      <span className="inline-block text-xs font-medium px-2 py-1 rounded-sm"
-                        style={{ background: 'var(--color-bg-base)', color: 'var(--color-text-body)' }}>
-                        {cat.specs}
-                      </span>
-                      <div className="mt-4">
-                        <Link to={`/products/${cat.slug}/`} className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition-all hover:scale-105 active:scale-95"
-                          style={{ background: 'var(--color-accent-warm)', color: '#ffffff', boxShadow: '0 4px 12px rgba(196, 122, 74, 0.3)' }}>
-                          View details <ArrowRight size={15} strokeWidth={3} />
-                        </Link>
-                      </div>
-                    </div>
-                  <div className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 transition-colors ${active === i ? '' : ''}`}
-                    style={{ background: active === i ? 'var(--color-accent)' : 'var(--color-border)' }} />
+                <div className="sm:w-48 shrink-0 bg-white p-4">
+                  <img src={cat.image} alt={cat.alt} className="w-full h-full object-contain aspect-square group-hover:scale-105 transition-transform" />
                 </div>
-              </div>
+                <div className="p-6 flex-1 flex flex-col justify-center">
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-[#c47a4a] transition-colors">{cat.name}</h3>
+                  <p className="text-sm leading-relaxed mb-4 text-gray-500">{cat.desc}</p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold uppercase tracking-wider px-2 py-1 bg-gray-100 rounded-sm text-gray-600">
+                      {cat.specs}
+                    </span>
+                    <span className="text-[#c47a4a] text-sm font-bold flex items-center gap-1">
+                      View Details <ArrowRight size={14} />
+                    </span>
+                  </div>
+                </div>
+              </Link>
             ))}
           </div>
 
-          {/* Active category showcase */}
-          <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2 rounded-sm overflow-hidden"
-              style={{ border: '1px solid var(--color-border)', background: '#fff' }}>
-              <img
-                key={active}
-                src={categories[active].image}
-                alt={categories[active].alt}
-                className="w-full h-full object-contain aspect-[3/2] animate-in fade-in duration-300"
-                loading="lazy"
-              />
-            </div>
-            
-            {/* Capability highlights based on the images */}
-            <div className="flex flex-col justify-center">
-              <div className="label-tag mb-6">Custom Showcase</div>
-              <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--color-text-strong)' }}>
-                {categories[active].name} Capabilities
-              </h3>
-              <ul className="space-y-4">
-                {[
-                  'Manufactured according to your technical drawings (STP, DWG, PDF)',
-                  'Wide range of head styles: Hex, Flange, Socket, Torx, and Specials',
-                  'Tight tolerances up to +/- 0.01mm for precision components',
-                  'Multiple material options and professional surface treatments',
-                  '100% inspection and batch traceability available',
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-sm" style={{ color: 'var(--color-text-body)' }}>
-                    <div className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ background: 'var(--color-accent)' }} />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-8 p-6 rounded-sm" style={{ background: 'var(--color-bg-base)', border: '1px solid var(--color-border)' }}>
-                <p className="text-xs italic leading-relaxed" style={{ color: 'var(--color-text-body)' }}>
-                  The assortment above demonstrates our capacity for custom geometries and high-precision finishing. Send us your requirements for a quote.
-                </p>
+          {/* Technical Guides CTA - Replaces redundant chips */}
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="p-8 rounded-sm bg-gray-50 border border-dashed border-gray-200 flex flex-col justify-between">
+              <div>
+                <h4 className="text-lg font-bold mb-2 text-[#1a1f2e]">Expert Material Guide</h4>
+                <p className="text-sm text-gray-500 mb-6">Compare carbon steel, stainless 304/316, and exotic alloys for your specific application requirements.</p>
               </div>
-            </div>
-          </div>
-
-          {/* Product Resources */}
-          <div className="mt-12 p-8 rounded-sm text-center" style={{ background: 'var(--color-bg-surface)', border: '1px solid var(--color-border)' }}>
-            <h3 className="text-xl font-bold mb-2" style={{ color: 'var(--color-text-strong)' }}>Product Resources</h3>
-            <p className="text-sm mb-6" style={{ color: 'var(--color-text-body)' }}>
-              Download our catalog and company profile for detailed specifications and capabilities.
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <Link to="/catalog/" className="btn-primary text-sm">
-                <Download size={16} /> Browse Product Catalog
-              </Link>
-              <Link to="/company-profile/" className="btn-secondary text-sm">
-                <Download size={16} /> Browse Company Profile
+              <Link to="/materials/" className="btn-secondary text-sm w-fit">
+                Explore Materials <ArrowRight size={16} />
               </Link>
             </div>
-          </div>
-
-          {/* Materials + CTA */}
-          <div className="mt-8 p-8 rounded-sm" style={{ background: 'var(--color-bg-surface)', border: '1px solid var(--color-border)' }}>
-            <div className="flex flex-col md:flex-row gap-8 items-start">
-              <div className="flex-1">
-                <h4 className="text-sm font-semibold uppercase tracking-wider mb-2" style={{ color: 'var(--color-accent)' }}>
-                  Material Options
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  {['Carbon Steel', 'Stainless Steel 304/316', 'Alloy Steel', 'Brass', 'Aluminum', 'Titanium'].map((m) => (
-                    <span key={m} className="px-3 py-1.5 rounded-sm text-xs font-medium"
-                      style={{ background: 'var(--color-bg-base)', color: 'var(--color-text-body)' }}>
-                      {m}
-                    </span>
-                  ))}
-                </div>
-                <h4 className="text-sm font-semibold uppercase tracking-wider mt-6 mb-2" style={{ color: 'var(--color-accent)' }}>
-                  Surface Finishes
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  {['Zinc Plated', 'Hot-dip Galvanized', 'Dacromet', 'Black Oxide', 'Nickel Plated', 'Passivated'].map((m) => (
-                    <span key={m} className="px-3 py-1.5 rounded-sm text-xs font-medium"
-                      style={{ background: 'var(--color-bg-base)', color: 'var(--color-text-body)' }}>
-                      {m}
-                    </span>
-                  ))}
-                </div>
+            <div className="p-8 rounded-sm bg-gray-50 border border-dashed border-gray-200 flex flex-col justify-between">
+              <div>
+                <h4 className="text-lg font-bold mb-2 text-[#1a1f2e]">Technical Catalog</h4>
+                <p className="text-sm text-gray-500 mb-6">Download our complete 2026 product catalog with full dimensional specifications and surface treatment options.</p>
               </div>
-              <div className="flex flex-col gap-3 min-w-[200px]">
-                <Link to="/catalog/" className="btn-primary text-sm justify-center">
-                  <Download size={16} /> Browse Catalog Online
-                </Link>
-                <Link to="/contact/" className="btn-secondary text-sm justify-center">
-                  Request Custom Quote <ArrowRight size={16} />
-                </Link>
-              </div>
+              <Link to="/catalog/" className="btn-primary text-sm w-fit">
+                Download Catalog <Download size={16} />
+              </Link>
             </div>
           </div>
 
