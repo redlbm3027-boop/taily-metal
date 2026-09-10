@@ -1,5 +1,23 @@
 ﻿export const blogPosts = [
   {
+    slug: 'advanced-corrosion-protection-ev-battery-fasteners-mexico',
+    title: 'Advanced Corrosion Protection: Why Dacromet Coating is Essential for EV Battery Fasteners in Mexico\'s Automotive Supply Chain',
+    date: '2026-09-10',
+    readTime: '9 min read',
+    excerpt:
+      'A technical guide for Tier 1 automotive suppliers in Mexico on selecting Grade 10.9/12.9 EV battery fasteners with Dacromet coating to prevent hydrogen embrittlement and ensure 1000h+ salt spray resistance.',
+    image: 'https://sc02.alicdn.com/kf/A5116e59c0a5245b1aa05452f3a683f4bk.png',
+    blocks: [
+      { h: 'The Rise of EV Manufacturing in Mexico', p: 'As Mexico solidifies its position as a global hub for Electric Vehicle (EV) manufacturing—with significant expansions in Monterrey, Puebla, and the Bajío region—the demand for high-performance battery pack components has reached an unprecedented level. For Tier 1 and Tier 2 procurement engineers, selecting the right fastener is no longer just about torque and tension; it is about long-term chemical stability and advanced corrosion protection.' },
+      { h: 'The Challenge: Corrosion vs. Battery Life', p: 'Mexico’s diverse climate, ranging from coastal humidity to arid industrial plains, poses a severe threat to metal components. EV battery fasteners require a service life of 15+ years. Traditional zinc plating often fails to meet this requirement, offering only 72-120 hours of Salt Spray Test (SST) resistance before red rust appears. Furthermore, for high-strength bolts (Grade 10.9 and above), traditional electroplating carries a hidden danger: Hydrogen Embrittlement.' },
+      { h: 'The Solution: Dacromet (Zinc-Aluminum Flake Coating)', p: 'To solve these challenges, Taily Metal implements Dacromet coating as the primary surface finish for our automotive-grade fasteners. Dacromet is a non-electrolytic coating consisting of zinc and aluminum flakes in a chromate binder.' },
+      { h: 'Zero Hydrogen Embrittlement Risk', p: 'Unlike electroplating, the Dacromet process does not involve acid pickling or electrolysis. This is critical for Grade 10.9 and 12.9 bolts used in safety-critical EV chassis and battery assemblies, ensuring the structural integrity of the fastener is never compromised.' },
+      { h: 'Superior SST Performance (1000h+)', p: 'Dacromet provides an overlapping layer of zinc and aluminum flakes that acts as a physical and chemical barrier. Our Dacromet-treated fasteners consistently pass 1000+ hours of neutral salt spray testing, making them ideal for the maritime transit from China to Mexican ports like Manzanillo and their subsequent life on the road.' },
+      { h: 'Taily Metal: Your Partner for Mexico\'s Automotive Success', p: 'Based in Dongguan, China, Taily Metal combines 12+ years of manufacturing expertise with a deep understanding of international automotive standards. We deliver 5 million precision parts daily, supporting high-volume Tier 1 orders with ISO 9001:2015 certification and 100% AOI sorting.' },
+      { h: 'Optimize Your Supply Chain Today', p: 'Transitioning to high-speed cold heading with Taily Metal can reduce your Cost Per Unit (CPU) by up to 35% while improving part strength. Contact us today for a technical review.' },
+    ],
+  },
+  {
     slug: 'precision-fasteners-electronics-semiconductor-southeast-asia',
     title: 'Precision Fastening Solutions for Southeast Asia’s Electronics & Semiconductor Sector',
     date: '2026-09-01',
