@@ -103,7 +103,7 @@ export default function Capabilities() {
         <div className="page-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="label-tag mb-6">Zero-Defect Commitment</div>
+              <div className="label-tag mb-6">Precision Manufacturing</div>
               <h2 className="section-heading mb-4">Quality Assurance System</h2>
               <p className="section-subtitle mb-8">
                 Every batch undergoes rigorous multi-stage inspection to ensure dimensional precision and material integrity before shipment.
