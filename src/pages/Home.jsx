@@ -101,9 +101,10 @@ export default function Home() {
               <video
                 className="w-full"
                 controls
+                preload="none"
                 poster="https://sc02.alicdn.com/kf/Addc2281798d449faafccb7b2bc769e13X.png"
               >
-                <source src={`/factory-tour.mp4?v=${Date.now()}`} type="video/mp4" />
+                <source src="/factory-tour.mp4" type="video/mp4" />
               </video>
             </div>
 
