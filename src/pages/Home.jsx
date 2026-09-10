@@ -113,7 +113,7 @@ export default function Home() {
               <h2 className="section-heading mb-4">Inside Taily Metal</h2>
               <p className="text-base leading-relaxed mb-8" style={{ color: 'var(--color-text-body)' }}>
                 Our 15,000+ sqm facility in Dongguan houses over 130 advanced production machines. 
-                We combine high-speed cold heading with precision CNC & Stamping to deliver 500M+ zero-defect parts annually.
+                We combine high-speed cold heading with precision CNC & Stamping to deliver 500M+ high-precision parts annually.
               </p>
               <div className="grid grid-cols-3 gap-4 mb-8">
                 {stats.slice(1, 4).map((stat, i) => (
