@@ -94,36 +94,49 @@ export default function Capabilities() {
         </div>
       </section>
 
-      {/* Quality Assurance (Simplified & Merged) */}
+      {/* Quality Assurance System - Specific Tests */}
       <section className="section">
         <div className="page-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="label-tag mb-6">Precision Manufacturing</div>
               <h2 className="section-heading mb-4">Quality Assurance System</h2>
               <p className="section-subtitle mb-8">
-                Every batch undergoes rigorous multi-stage inspection to ensure dimensional precision and material integrity before shipment.
+                Our multi-stage inspection protocol ensures that every batch meets the highest standards for dimensional accuracy and mechanical performance.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {['Dimensional Inspection', 'Hardness Testing', 'Tensile Testing', 'Salt Spray Test', 'Surface Finish Check'].map((q) => (
-                  <div key={q} className="flex items-center gap-3 p-3 rounded-sm bg-gray-50 border border-gray-100">
-                    <CheckCircle2 size={16} style={{ color: 'var(--color-accent-warm)' }} />
-                    <span className="text-sm font-semibold text-gray-700">{q}</span>
+              <div className="space-y-4">
+                {[
+                  { title: 'Dimensional Inspection', desc: 'Precision measurement of diameters, lengths, and thread pitches using digital calipers and projectors.' },
+                  { title: 'Hardness Testing', desc: 'Rockwell or Vickers hardness testing to verify material tempering and heat treatment consistency.' },
+                  { title: 'Tensile Testing', desc: 'Destructive testing to measure breaking strength and elongation, ensuring load-bearing reliability.' },
+                  { title: 'Salt Spray Test', desc: 'Up to 2000+ hours of corrosion resistance validation for Dacromet and galvanized finishes.' },
+                ].map((item) => (
+                  <div key={item.title} className="flex items-start gap-4 p-5 rounded-sm bg-gray-50 border border-gray-100 hover:bg-white hover:shadow-md transition-all">
+                    <CheckCircle2 size={18} style={{ color: 'var(--color-accent-warm)' }} className="mt-1" />
+                    <div>
+                      <div className="text-base font-bold text-[#1a1f2e]">{item.title}</div>
+                      <div className="text-sm text-gray-500 mt-1">{item.desc}</div>
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="rounded-sm overflow-hidden border border-gray-200">
-                <img src="https://sc02.alicdn.com/kf/A961c3a86dea344078c3ae9419cfbbef1C.png" alt="QC measurement" className="w-full aspect-square object-cover" />
+              <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm">
+                <img src="https://sc02.alicdn.com/kf/A961c3a86dea344078c3ae9419cfbbef1C.png" alt="Dimensional Inspection" className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Dimensional</div>
               </div>
-              <div className="space-y-4">
-                <div className="rounded-sm overflow-hidden border border-gray-200">
-                  <img src="https://sc02.alicdn.com/kf/Ab020d1325bcb4d3abd8e377d63952e2dp.png" alt="Salt spray test" className="w-full aspect-[4/3] object-cover" />
-                </div>
-                <div className="rounded-sm overflow-hidden border border-gray-200">
-                  <img src="https://sc02.alicdn.com/kf/A02e59a23fc9d4de4b9fb9bf85e6e57bez.png" alt="Thread inspection" className="w-full aspect-[4/3] object-cover" />
-                </div>
+              <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm">
+                <img src="https://sc02.alicdn.com/kf/A36798e98604344848037344007833077e.png" alt="Hardness Testing" className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Hardness</div>
+              </div>
+              <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm">
+                <img src="https://sc02.alicdn.com/kf/A9d98e1694f474075b9420078330777eX.png" alt="Tensile Testing" className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Tensile</div>
+              </div>
+              <div className="group relative rounded-sm overflow-hidden border border-gray-200 shadow-sm">
+                <img src="https://sc02.alicdn.com/kf/Ab020d1325bcb4d3abd8e377d63952e2dp.png" alt="Salt Spray Test" className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold uppercase tracking-wider">Salt Spray</div>
               </div>
             </div>
           </div>
