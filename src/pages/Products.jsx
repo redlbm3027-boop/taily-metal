@@ -113,9 +113,9 @@ export default function Products() {
               </div>
             </button>
             
-            <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isProcessOpen ? 'max-h-[1200px] border-t opacity-100' : 'max-h-0 opacity-0'}`} style={{ borderColor: 'var(--color-border)' }}>
-              <div className="p-4 md:p-12 overflow-x-auto">
-                <svg className="w-full min-w-[700px] h-auto mx-auto" viewBox="0 0 760 920" role="img" style={{ display: 'block' }}>
+            <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isProcessOpen ? 'max-h-[2000px] border-t opacity-100' : 'max-h-0 opacity-0'}`} style={{ borderColor: 'var(--color-border)' }}>
+              <div className="p-4 md:p-12 pb-16 overflow-x-auto">
+                <svg className="w-full min-w-[700px] h-auto mx-auto" viewBox="0 0 760 980" role="img" style={{ display: 'block' }}>
                   <title>Taily Metal Technical Production Process Flowchart</title>
                   <defs>
                     <marker id="arrow-blue" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
