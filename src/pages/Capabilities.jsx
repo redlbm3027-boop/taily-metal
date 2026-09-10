@@ -5,19 +5,17 @@ import PageHero from '../components/PageHero';
 const timeline = [
   { icon: <PenTool size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Design & Engineering', desc: 'Our engineers review your drawings and optimize for manufacturability. We support STP, DWG, PDF, and hand sketches.' },
   { icon: <Cog size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Tooling & Setup', desc: 'In-house tooling workshop with CNC tool grinders, EDM, and custom die fabrication for rapid turnaround.' },
-  { icon: <Factory size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Production', desc: 'Multi-shift production across cold heading, thread rolling, CNC turning, and milling lines.' },
+  { icon: <Factory size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Production', desc: 'Multi-shift production across high-speed cold heading, thread rolling, CNC, and automated stamping lines.' },
   { icon: <FlaskConical size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Quality Control', desc: 'Full inspection per ISO 9001: dimensional checks, hardness testing, tensile testing, and salt spray.' },
 ];
 
 const equipment = [
   'Multi-station Cold Heading Machines',
+  'Mold closing machine',
+  'Thread Rolling Machines',
   'CNC Turning Centers',
   'CNC Milling Machines',
-  'Thread Rolling Machines',
-  'Heat Treatment Furnaces',
-  'Optical Profile Projector',
-  'Salt Spray Test Chamber',
-  'Universal Tensile Tester',
+  'Automatic Stamping Presses',
 ];
 
 const certs = [
@@ -59,9 +57,9 @@ export default function Capabilities() {
         <div className="page-container py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="section-heading mb-4">Equipment & Technology</h2>
+              <h2 className="section-heading mb-4">Production Equipment</h2>
               <p className="section-subtitle mb-8">
-                Our 15000+ sqm facility is built around high-speed cold heading production lines, with CNC machining and stamping for comprehensive manufacturing coverage.
+                Our 15,000+ sqm facility is optimized for high-speed cold heading and precision CNC machining, providing a robust hardware foundation for custom projects.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {equipment.map((item) => (
