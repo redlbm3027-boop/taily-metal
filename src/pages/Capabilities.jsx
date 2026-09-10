@@ -5,18 +5,16 @@ import PageHero from '../components/PageHero';
 const timeline = [
   { icon: <PenTool size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Design & Engineering', desc: 'Our engineers review your drawings and optimize for manufacturability. We support STP, DWG, PDF, and hand sketches.' },
   { icon: <Cog size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Tooling & Setup', desc: 'In-house tooling workshop with CNC tool grinders, EDM, and custom die fabrication for rapid turnaround.' },
-  { icon: <Factory size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Production', desc: 'Multi-shift production across cold heading, thread rolling, CNC turning, milling, and stamping lines.' },
-  { icon: <FlaskConical size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Quality Control', desc: 'Full inspection per ISO 9001: dimensional checks, hardness testing, tensile testing, salt spray, and CMM.' },
+  { icon: <Factory size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Production', desc: 'Multi-shift production across cold heading, thread rolling, CNC turning, and milling lines.' },
+  { icon: <FlaskConical size={24} style={{ color: 'var(--color-accent)' }} />, title: 'Quality Control', desc: 'Full inspection per ISO 9001: dimensional checks, hardness testing, tensile testing, and salt spray.' },
 ];
 
 const equipment = [
   'Multi-station Cold Heading Machines',
-  'CNC Turning Centers (5-axis)',
+  'CNC Turning Centers',
   'CNC Milling Machines',
   'Thread Rolling Machines',
-  'Automatic Stamping Presses',
   'Heat Treatment Furnaces',
-  'Coordinate Measuring Machine (CMM)',
   'Optical Profile Projector',
   'Salt Spray Test Chamber',
   'Universal Tensile Tester',
@@ -109,7 +107,7 @@ export default function Capabilities() {
                 Every batch undergoes rigorous multi-stage inspection to ensure dimensional precision and material integrity before shipment.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {['Dimensional Inspection', 'Hardness Testing', 'Tensile Testing', 'Salt Spray Test', 'CMM Measurement', 'Surface Finish Check'].map((q) => (
+                {['Dimensional Inspection', 'Hardness Testing', 'Tensile Testing', 'Salt Spray Test', 'Surface Finish Check'].map((q) => (
                   <div key={q} className="flex items-center gap-3 p-3 rounded-sm bg-gray-50 border border-gray-100">
                     <CheckCircle2 size={16} style={{ color: 'var(--color-accent-warm)' }} />
                     <span className="text-sm font-semibold text-gray-700">{q}</span>
