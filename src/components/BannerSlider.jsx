@@ -57,7 +57,7 @@ export default function BannerSlider() {
             <div className="label-tag mb-8 border-white/20 text-[#c47a4a] bg-white/5 backdrop-blur-sm">
               Global Standard Compliant (DIN, JIS, ISO)
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight mb-6">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight tracking-tight mb-6">
               Custom Cold Headed <br /> Fasteners Manufacturer
             </h1>
             
