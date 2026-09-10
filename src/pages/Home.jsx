@@ -210,8 +210,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Frequently Asked Questions */}
-      <Faq items={homeFaqs} />
+      {/* Frequently Asked Questions - Simplified Selection */}
+      <Faq items={homeFaqs.slice(0, 4)} />
 
       {/* Ready to Start Your Project? */}
       <section style={{ background: 'var(--color-bg-surface)' }}>
