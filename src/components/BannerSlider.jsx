@@ -57,44 +57,36 @@ export default function BannerSlider() {
             <div className="label-tag mb-8 border-white/20 text-[#c47a4a] bg-white/5 backdrop-blur-sm">
               Global Standard Compliant (DIN, JIS, ISO)
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[0.95] tracking-[-0.04em] mb-8">
-              China Custom Fasteners <br /> & Precision Parts
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[0.95] tracking-[-0.04em] mb-6">
+              Custom Cold Headed <br /> Fasteners Manufacturer
             </h1>
             
-            {/* Features Row */}
-            <div className="flex flex-wrap gap-6 mb-10 text-white/90">
-              <div className="flex flex-col">
-                <span className="text-[10px] uppercase tracking-widest text-[#c47a4a] font-bold">MOQ</span>
-                <span className="text-lg font-bold">1 Pieces</span>
-              </div>
-              <div className="w-[1px] h-10 bg-white/10 hidden sm:block"></div>
-              <div className="flex flex-col">
-                <span className="text-[10px] uppercase tracking-widest text-[#c47a4a] font-bold">Sample Lead Time</span>
-                <span className="text-lg font-bold">3-15 Days</span>
-              </div>
-              <div className="w-[1px] h-10 bg-white/10 hidden sm:block"></div>
-              <div className="flex flex-col">
-                <span className="text-[10px] uppercase tracking-widest text-[#c47a4a] font-bold">Shipping To</span>
-                <span className="text-lg font-bold">50+ Countries</span>
-              </div>
-            </div>
+            <p className="text-xl md:text-2xl text-[#c47a4a] font-bold leading-relaxed max-w-2xl mb-8">
+              Reduce machining cost by up to 35% with high-speed cold heading solutions.
+            </p>
 
-            {/* Dynamic Content */}
-            <div className="min-h-[120px]">
-              <div key={current} className="animate-in fade-in slide-in-from-bottom-2 duration-500">
-                <div className="text-sm font-black uppercase tracking-[0.2em] text-white/50 mb-3">{slides[current].label}</div>
-                <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-lg mb-10">
-                  {slides[current].desc}
-                </p>
+            {/* Trust Points Row */}
+            <div className="flex flex-col gap-3 mb-10 text-white/90">
+              <div className="flex items-center gap-3">
+                <span className="text-xl">✅</span>
+                <span className="text-lg md:text-xl font-medium">20+ Years Manufacturing Experience</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-xl">✅</span>
+                <span className="text-lg md:text-xl font-medium">500M+ Parts Produced Annually</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-xl">✅</span>
+                <span className="text-lg md:text-xl font-medium">ISO 9001 Certified Quality System</span>
               </div>
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Link to="/contact" className="btn-primary border-none" style={{ background: '#c47a4a' }}>
-                Request a Quote <ArrowRight size={18} />
+              <Link to="/contact/" className="btn-primary border-none text-base py-4 px-8" style={{ background: '#c47a4a' }}>
+                Upload Your Request <ArrowRight size={20} className="ml-2" />
               </Link>
-              <Link to="/capabilities" className="btn-secondary border-white/20 text-white hover:border-white hover:text-white">
-                Our Capabilities
+              <Link to="/capabilities/" className="btn-secondary border-white/20 text-white hover:border-white hover:text-white text-base py-4 px-8">
+                Explore Capabilities
               </Link>
             </div>
           </div>
