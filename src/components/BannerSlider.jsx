@@ -34,7 +34,7 @@ export default function BannerSlider() {
   }, []);
 
   return (
-    <section className="relative h-[70vh] md:h-[80vh] flex items-center overflow-hidden bg-[#1a1f2e]">
+    <section className="relative min-h-[600px] h-[80vh] flex items-center overflow-hidden bg-[#1a1f2e]">
       {/* Background Images */}
       {slides.map((slide, i) => (
         <div
@@ -51,41 +51,41 @@ export default function BannerSlider() {
         </div>
       ))}
 
-      <div className="page-container relative z-10 py-20 w-full">
+      <div className="page-container relative z-10 py-12 md:py-20 w-full">
         <div className="max-w-3xl">
           <div className="animate-in fade-in slide-in-from-left-4 duration-700">
-            <div className="label-tag mb-8 border-white/20 text-[#c47a4a] bg-white/5 backdrop-blur-sm">
+            <div className="label-tag mb-6 md:mb-8 border-white/20 text-[#c47a4a] bg-white/5 backdrop-blur-sm text-[10px] md:text-xs">
               Global Standard Compliant (DIN, JIS, ISO)
             </div>
-            <h1 className="text-xl md:text-3xl lg:text-5xl font-bold text-white leading-tight tracking-tight mb-6">
-              Custom Cold Headed <br /> Fasteners Manufacturer
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight mb-4 md:mb-6">
+              Custom Cold Headed <br className="hidden sm:block" /> Fasteners Manufacturer
             </h1>
             
-            <p className="text-xl md:text-2xl text-[#c47a4a] font-bold leading-relaxed max-w-2xl mb-8">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#c47a4a] font-bold leading-relaxed max-w-2xl mb-6 md:mb-8">
               Reduce machining cost by up to 35% with high-speed cold heading solutions.
             </p>
 
             {/* Trust Points Row */}
-            <div className="flex flex-col gap-3 mb-10 text-white/90">
-              <div className="flex items-center gap-3">
-                <span className="text-xl">✅</span>
-                <span className="text-lg md:text-xl font-medium">20+ Years Manufacturing Experience</span>
+            <div className="flex flex-col gap-2 md:gap-3 mb-8 md:mb-10 text-white/90">
+              <div className="flex items-center gap-2 md:gap-3">
+                <span className="text-base md:text-xl">✅</span>
+                <span className="text-sm sm:text-base md:text-lg lg:text-xl font-medium">20+ Years Manufacturing Experience</span>
               </div>
-              <div className="flex items-center gap-3">
-                <span className="text-xl">✅</span>
-                <span className="text-lg md:text-xl font-medium">500M+ Parts Produced Annually</span>
+              <div className="flex items-center gap-2 md:gap-3">
+                <span className="text-base md:text-xl">✅</span>
+                <span className="text-sm sm:text-base md:text-lg lg:text-xl font-medium">500M+ Parts Produced Annually</span>
               </div>
-              <div className="flex items-center gap-3">
-                <span className="text-xl">✅</span>
-                <span className="text-lg md:text-xl font-medium">ISO 9001 Certified Quality System</span>
+              <div className="flex items-center gap-2 md:gap-3">
+                <span className="text-base md:text-xl">✅</span>
+                <span className="text-sm sm:text-base md:text-lg lg:text-xl font-medium">ISO 9001 Certified Quality System</span>
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-4">
-              <Link to="/contact/" className="btn-primary border-none text-base py-4 px-8" style={{ background: '#c47a4a' }}>
-                Upload Your Request <ArrowRight size={20} className="ml-2" />
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4">
+              <Link to="/contact/" className="btn-primary border-none text-sm md:text-base py-3 md:py-4 px-6 md:px-8 w-full sm:w-auto text-center" style={{ background: '#c47a4a' }}>
+                Upload Your Request <ArrowRight size={18} className="ml-2 inline" />
               </Link>
-              <Link to="/capabilities/" className="btn-secondary border-white/20 text-white hover:border-white hover:text-white text-base py-4 px-8">
+              <Link to="/capabilities/" className="btn-secondary border-white/20 text-white hover:border-white hover:text-white text-sm md:text-base py-3 md:py-4 px-6 md:px-8 w-full sm:w-auto text-center">
                 Explore Capabilities
               </Link>
             </div>
